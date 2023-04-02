@@ -7,8 +7,7 @@ export interface Chapter {
 
 function Menu() {
     const chapters: Chapter[] = [
-        { id: '1', title: 'Первая глава' },
-        { id: '2', title: 'Вторая глава' }
+        { id: '1', title: 'Первая глава' }
     ];
 
     return (
