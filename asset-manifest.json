@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ira/static/css/main.a7701fa1.css",
+    "main.js": "/ira/static/js/main.9af14836.js",
+    "index.html": "/ira/index.html",
+    "main.a7701fa1.css.map": "/ira/static/css/main.a7701fa1.css.map",
+    "main.9af14836.js.map": "/ira/static/js/main.9af14836.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7701fa1.css",
+    "static/js/main.9af14836.js"
+  ]
+}
