@@ -1,2 +1,38 @@
-.chapter {
+.chapter {}
+
+.horse {
+    background: url('https://www.pinclipart.com/picdir/big/556-5567912_horse-head-png-clipart-horse-head-transparent-png.png');
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 30vh;
+    margin: 0 1em;
+
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.merlin {
+    background: url('https://e7.pngegg.com/pngimages/110/288/png-clipart-labrador-retriever-infectious-canine-hepatitis-infection-canine-distemper-canine-parvovirus-puppy-miscellaneous-animals.png');
+    transform: scale(-1, 1);
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 30vh;
+    margin: 0 1em;
+
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        padding-left: 130vw;
+    }
+
+    to {
+        padding-left: 0vw;
+    }
 }

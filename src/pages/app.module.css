@@ -1,8 +1,10 @@
 main {
     display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 500px;
-    background-color: beige ;
+    background:  linear-gradient(90deg, #b3dbd3, #f4d6db);
     margin: 0 auto;
     padding: 1em;
+    height: 100vh;
 }

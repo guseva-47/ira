@@ -1,6 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
 
-export interface Replic {
+export type Heroes = 'horse' | 'merlin';
+
+export interface Answer {
     id: string;
     text: string;
     onClick: (func: ((q: Question) => void )) => void;
@@ -8,18 +10,22 @@ export interface Replic {
 
 export interface Question {
     text: string;
-    answers?: Replic[];
+    answers?: Answer[];
+    hero: Heroes;
 };
 
 const a31: Question = {
+    hero: 'horse',
     text: "Мы пойдём с конём по полю вдвоём!"
 }
 
 const a32: Question = {
+    hero: 'merlin',
     text: "утром светлым тихо пойдем!"
 }
 
 const a21: Question = {
+    hero: 'merlin',
     text: "ночкой темной тихо пойдем?",
     answers: [
         {
@@ -31,6 +37,7 @@ const a21: Question = {
 }
 
 const a22: Question = {
+    hero: 'horse',
     text: "раз не ночью то когда?",
     answers: [
         {
@@ -47,6 +54,7 @@ const a22: Question = {
 }
 
 export const first: Question = {
+    hero: 'merlin',
     text: "выйду ночью в поле с конем?",
     answers: [
         {
@@ -60,4 +68,20 @@ export const first: Question = {
             onClick: (setQuestion) => setQuestion(a22)
         },
     ]
+}
+
+export interface HeroData {
+    image: string,
+    name: string,
+}
+
+export const heroesData: Record<Heroes, HeroData> = {
+    horse: {
+        image: 'horse.jpg',
+        name: 'Лошадь'
+    },
+    merlin: {
+        image: 'merlin.jpg',
+        name: 'Мерлин'
+    }
 }
